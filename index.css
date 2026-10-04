@@ -1,0 +1,90 @@
+/* Basic reset-ish defaults: the page uses the browser's default serif font */
+body {
+  margin: 8px;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  background: #fff;
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: relative;
+  max-width: 100%;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+/* Line under the name (stops before the photo) */
+.header hr {
+  width: 630px;
+  max-width: 100%;
+  margin: 12px 0 16px 0;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+/* Photo pinned to the top-right corner */
+.photo {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 188px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.job-title {
+  margin: 0 0 40px 0;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
+
+address {
+  font-style: normal;
+}
+
+address p {
+  margin: 0 0 1.05rem 0;
+}
+
+address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Main sections ---------- */
+main {
+  margin-top: 28px;
+}
+
+main section h2 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1.8rem;
+  color: green;
+}
+
+main section h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 1.3rem;
+  color: blue;
+}
+
+main section p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .photo {
+    position: static;
+    display: block;
+    margin: 0 0 16px auto;
+  }
+}
